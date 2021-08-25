@@ -49,21 +49,46 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .header_menu{
     width: 60%;
 }
-.header_menu ul{}
-.header_menu ul li{
-    display: inline-block;
+.header_menu ul{
+	position: relative;
+}
+.header_menu ul li {
+	display: inline-block;
+	margin-top: 22px;
+}
+.header_menu ul li::after{
+	content: "";
+	border-bottom: 1px solid #ddd;
 }
 .header_menu ul li a {
 	text-decoration: none;
 	color: #c3c1bb;
 	font-size: 25px;
-	padding: 0px 15px;
-	line-height: 74px;
+	margin: 0px 30px;
+	padding: 0px 10px;
+	margin-left: -4px;
 	display: inline-block;
 }
 .header_menu ul li a:hover{
     color: #fcfae2;
 }
+ /* Dropdown Start */
+ .header_menu ul li ul {
+	position: absolute;
+	background: #000;
+	width: 218px;
+	top: 100%;
+	left: 43%;
+	opacity: 0;
+	visibility: hidden;
+}
+ .header_menu ul li ul li{
+	 display: inline-block;
+ }
+ .header_menu ul li ul li a{
+	 bg
+ }
+ .header_menu ul li ul li a:hover{}
 
 /* Banner Section */
 .banner_section {
@@ -72,7 +97,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 	background-size: cover;
 	padding: 175px 0;
 }
-.banner_title{}
 .banner_title h1 {
 	color: #203128;
 	font-size: 40px;
@@ -83,7 +107,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 	font-weight: 600;
 	padding: 20px 0px;
 }
-.banner_button{}
 .default_btn_1 {
 	color: #ffffff;
 	padding: 18px 37px;
@@ -189,7 +212,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 	line-height: 25px;
 	margin-bottom: 42px;
 }
-.service_item{}
 .box_d {
 	width: 267px;
 	background: #ffffff;
@@ -208,7 +230,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 	margin-right: 13px;
 	margin-left: 14px;
 }
-.s_content{}
 .s_content h3 {
 	font-size: 25px;
 	color: #496580;
@@ -227,7 +248,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .work_section{
 	background: #87a471;
 }
-.work_text{}
 .work_text h2 {
 	color: #ffffff;
 	font-size: 35px;
@@ -237,8 +257,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .work_text p {
 	color: #dfe1dd;
 }
-.work_item{}
-.center_img_item{}
 .center_img_item img{
 	width: 100%;
 }
@@ -342,20 +360,25 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 	font-size: 19px;
 	margin-bottom: ;
 }
-.header_button {
+.section_button {
 	margin-top: 25px;
 	display: inline-block;
 }
-.header_button a {
+.section_button a {
 	background: #00bc9c;
 	color: #e4e6e8;
 	font-size: 13px;
-	padding: 16px 50px;
+	padding: 14px 45px;
 	display: inline-block;
 	font-weight: 700;
 	text-decoration: none;
 	border-radius: 5px;
+	transition: .5s;
 }
+.section_button a:hover{
+	background: #4d6a86;
+}
+
 
 /* Footer Section */
 .footer_bottom{
@@ -364,8 +387,3 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 	font-size: 18px;
 	padding: 20px 0;
 }
-
-
-
-
-
