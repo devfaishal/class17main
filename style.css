@@ -42,9 +42,10 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .header_logo {
     width: 40%;
 }
-.header_logo img{
-    width: 80px;
-    padding: 10px 0;
+.header_logo img {
+	width: 80px;
+	padding: 5px 0;
+	margin-top: 15px;
 }
 .header_menu{
     width: 60%;
@@ -54,41 +55,51 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 }
 .header_menu ul li {
 	display: inline-block;
-	margin-top: 22px;
 }
-.header_menu ul li::after{
-	content: "";
-	border-bottom: 1px solid #ddd;
-}
+
 .header_menu ul li a {
-	text-decoration: none;
 	color: #c3c1bb;
-	font-size: 25px;
-	margin: 0px 30px;
-	padding: 0px 10px;
-	margin-left: -4px;
 	display: inline-block;
+	text-decoration: none;
+	padding: 10px 25px;
+	line-height: 59px;
+	font-size: 22px;
+	transition: .5s;
 }
 .header_menu ul li a:hover{
     color: #fcfae2;
+	text-decoration: underline;
 }
  /* Dropdown Start */
  .header_menu ul li ul {
 	position: absolute;
 	background: #000;
-	width: 218px;
+	width: 214px;
 	top: 100%;
-	left: 43%;
-	opacity: 0;
+	left: 48%;
 	visibility: hidden;
+	opacity: 0;
+	transition: .4s;
+	border-top: 3px solid #fcfcfb;
+	transform: scaleY(0);
 }
  .header_menu ul li ul li{
-	 display: inline-block;
+	 display: block;
  }
  .header_menu ul li ul li a{
-	 bg
+	 display: block;
+	 line-height: 29px;
  }
- .header_menu ul li ul li a:hover{}
+ .header_menu ul li:hover ul{
+	opacity: 1;
+	visibility: visible;
+	transform: scaleY(1);
+ }
+ .header_menu ul li ul li a:hover{
+	 background: #fff;
+	 color: #000;
+	 transition: .4s;
+ }
 
 /* Banner Section */
 .banner_section {
@@ -294,23 +305,20 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .team_section{
 	background: #549778;
 }
-/* .team_title::after{
-	content: "";
-	width: 313px;
-	margin: auto;
-	padding: 6px 0;
-	border-bottom: 3px solid #eadfdb;
-	border-width: ;
-	margin-top: 13px;
-} */
-.team_title h2 {
+.team_section h2 {
 	color: #ffffff;
-	font-size: 30px;
-	/* margin-top: ; */
-	padding-top: 50px;
+	font-size: 35px;
+	padding-top: 60px;
 	padding-bottom: 30px;
 }
-.members_pic{}
+.title_border {
+	width: 268px;
+	height: 3px;
+	background: #d5d5cd;
+	margin: auto;
+	margin-bottom: 45px;
+	margin-top: -22px;
+}
 .members_pic img {
 	width: 290px;
 	height: 291px;
