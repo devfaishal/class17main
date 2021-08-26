@@ -151,6 +151,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 	background: #000;
 	color: #fff;
 }
+
 /* About Section */
 .about_section {
 	background: #84a475;
@@ -336,7 +337,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 	margin-left: 15px;
 	display: inline-block;
 }
-.icon ul{}
 .icon ul li{
 	display: inline-block;
 }
@@ -386,7 +386,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .section_button a:hover{
 	background: #4d6a86;
 }
-
 
 /* Footer Section */
 .footer_bottom{
